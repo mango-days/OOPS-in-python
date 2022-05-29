@@ -41,10 +41,10 @@ class Employee ( CollegeStudent , Human ):
         records.general.showGeneral ()
         print ( records.empNo , records.courses )
 
-    def IdentityCheck ( records ) :
+    def identityCheck ( records ) :
         if records.general.name == records.c_records.student.name and records.general.name == records.s_records.student.name : print ("Identity confirmed")
         else : print ( "Records do not match !!!!" )
                 
 Obj = Employee ( "Jasmine Kaur" , 23 , "F" , 22409 , "Computer Science" , "Mathematics" )
 Obj.showRecords()
-Obj.IdentityCheck()
+Obj.identityCheck()
